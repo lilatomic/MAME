@@ -15,15 +15,26 @@ You'll notice i split the website into a specific structure. All css in one fold
 diectory. This is on purpose lol, at any time, if you were to look for a specifc piece of media for your site, whether
 that be an image or a javascript file you know EXACTLY where to start looking
 
-3. Code Review
+3. File Names and Naming convention
+TODO
+
+4. Code Review
+
 I will start reviewing your code by simply creating a commented version of one of your files. In the future i will use this 
 git repo webite's review tools as it lends it self to better readability
 
 a. About US
-[see html file]
+
+So first thing i did, was remove some redundancies. I noticed you had alot of similar chunks of code used for the profile sections, and you were seperating them off into sub classes like presidentPic, and financePic etc. This wasnt needed. I instead attack the sub elements of the general case, and use this for all the profile. If i REALLY wanted one profile to work in a different way, i would tack on an id, and effect it that way.
+
+Second this was removing some wrappers, so instead of having 
+TODO: need to finish
 
 b. main.css
-[see css file]
+
+Once i cleaned up the html file a bit, i deleted a chunk of the css. The good part about the deleting is now, there is less to read through when trying to figure out what effects what. Although initially it is easier to effect certain elements by tacking on an id or class to them, once you have pages full of elements, it becomes hell trying tp parse through all of it.
+
+Other formatting things i did was decrease the seperators to 80 chars, although it isnt so much a standard anymore with all the different sized screens people use to develop it, it looks relatively clean. 
 
 c. Design Teams
-[see html file]
+TODO
