@@ -70,7 +70,7 @@ h1 {
 /*-------------------------------- Councillors ------------------------------*/
 
 #team {
-    padding-top: 50px;
+    padding-top: 25px;
 }
 
 #team h1 {
@@ -79,7 +79,7 @@ h1 {
 
 #team section {
     width: 33%;
-    height: 400px;
+    height: 500px;
     display: inline-block;
     padding: 10px;
     overflow: hidden;
@@ -88,10 +88,11 @@ h1 {
 
 #team section div {
     position: absolute;
-    background-color: #2ecc71;
+    background-color: #595959;
+    color: white;
     left: 0;
     right: 0;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     height: 100%;
     top: 30px;
@@ -104,7 +105,7 @@ h1 {
 #team section img {
     display: block;
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
     transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
 }
@@ -115,11 +116,43 @@ h1 {
 }
 
 #team section:hover img {
-    opacity: 0;
+    opacity: 0.025;
 }
 
 #team img {
     width: 100%;
+}
+
+#team .profileSmaller {
+    width: 24%;
+    /* 25% overlaps into the next line? Weird... Probs cuz of padding or margin?*/
+    height: 500px;
+    display: inline-block;
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+#team h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-align: left;
+    padding-left: 15px;
+    font-weight: bold;
+}
+
+#team h4 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 15px;
+}
+
+#team p {
+    font-size: 14px;
+    text-align: justify;
+    text-align-last: center;
+    padding: 20px 30px 30px 30px;
 }
 
 
@@ -143,3 +176,87 @@ h1 {
     text-align: center;
     transform: translateY(30px);
 }
+
+
+/* Note that I simply used the id "team" from the aboutUs html page for this. */
+
+
+/*------------------------------Contact Us-------------------------------------*/
+
+#contactUs {
+    padding-top: 175px;
+    width: 49.5%;
+    height: 100vh;
+    background-color: white;
+    display: inline-block;
+    overflow: hidden;
+}
+
+#contactUs h1 {
+    font-size: 42px;
+    text-align: center;
+}
+
+#contactUs h2 {
+    font-size: 18px;
+    text-align: center;
+}
+
+#contactUs p {
+    text-align: justify;
+    text-align-last: center;
+}
+
+#contactTitle {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#contactUs .left {
+    margin-left: 150px;
+    border-right-style: solid;
+    border-width: 0.1px;
+}
+
+#contactUs .right {
+    margin-right: 150px;
+}
+
+#contactUs div {
+    padding-top: 25px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.emailBox {
+    margin-left: 7.5%;
+    display: inline-block;
+    width: 85%;
+    height: auto;
+}
+
+
+/*
+B
+U
+F
+F
+E
+R
+
+S
+O
+
+T
+H
+A
+T
+
+I
+
+S
+E
+E
+
+...*/
