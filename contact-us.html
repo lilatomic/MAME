@@ -28,16 +28,34 @@
             </div>  
         </section>
     </section>
+    <section id="quick"></section>
     <section id="contactUs">
         <section class="right">
         <section id="contactTitle">
             <h1>EMAIL US</h1>
         </section>
-        <div>
+        <div id="contact-area">
+        <!--
             <pre> Name: </pre>
             <pre> Email: </pre>
             <pre> Subject: </pre>
             <pre> Text: <br><br><br><br><br><br><br><br></pre>
+        -->
+                <form method="post" action="contactengine.php">
+                <label for="Name">Name:</label>
+                <input type="text" name="Name" id="Name" />
+                
+                <label for="City">City:</label>
+                <input type="text" name="City" id="City" />
+    
+                <label for="Email">Email:</label>
+                <input type="text" name="Email" id="Email" />
+                
+                <label for="Message">Message:</label><br />
+                <textarea name="Message" rows="20" cols="20" id="Message"></textarea>
+
+                <input type="submit" name="submit" value="Submit" class="submit-button" />
+            </form>
         </div>
         </section>
         <!-- Need to insert the email us thing here, where people can fill it out and an email is sent to my inbox. Has Name || Email || Subject || Text The text above is to simply demonstrate what im talking about.-->

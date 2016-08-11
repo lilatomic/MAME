@@ -192,6 +192,14 @@ h1 {
     overflow: hidden;
 }
 
+#quick {
+    width: 0.1%;
+    height: 400px;
+    margin-bottom: 200px;
+    display: inline-block;
+    background-color: black;
+}
+
 #contactUs h1 {
     font-size: 42px;
     text-align: center;
@@ -213,27 +221,69 @@ h1 {
     margin: 0 auto;
 }
 
-#contactUs .left {
+.left {
     margin-left: 150px;
+    /*
     border-right-style: solid;
     border-width: 0.1px;
+    margin-right: 25px;
+    */
 }
 
-#contactUs .right {
+.right {
     margin-right: 150px;
 }
 
 #contactUs div {
-    padding-top: 25px;
+    padding-top: 50px;
     width: 80%;
     margin: 0 auto;
 }
 
+
+/* This below may be unecessary */
+
+
+/*
 .emailBox {
     margin-left: 7.5%;
     display: inline-block;
     width: 85%;
     height: auto;
+}
+*/
+
+#contact-area input,
+#contact-area textarea {
+    padding: 5px;
+    width: 450px;
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+    margin: 0px 0px 5px 0px;
+    border: 2px solid #ccc;
+}
+
+#contact-area textarea {
+    height: 125px;
+}
+
+#contact-area textarea:focus,
+#contact-area input:focus {
+    border: 2px solid #900;
+}
+
+#contact-area input.submit-button {
+    width: 125px;
+}
+
+label {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    float: left;
+    text-align: left;
+    width: 100px;
+    padding-top: 2px;
+    font-size: 1.2em;
 }
 
 
@@ -304,6 +354,59 @@ h1 {
     list-style-type: none;
     text-align: center;
     line-height: 200%;
+}
+
+
+/*---------------------------------Mentorship---------------------------------------*/
+
+
+/* I can't seem to get rid of the annoying GAP in between sections here... */
+
+
+/*
+#mentorship {
+    margin: 0px;
+    padding: 0px;
+    width: 49.5%;
+    height: 100vh;
+    display: inline-block;
+    padding-top: 10vh;
+}
+*/
+
+#mentorsTitle {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 36px;
+    text-align: center;
+    font-weight: bolder;
+    border-bottom: 3px solid;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+#mentor {
+    width: 49.8%;
+    height: 100vh;
+    display: inline-block;
+    background-color: white;
+    color: #565656;
+}
+
+#mentee {
+    width: 49.9%;
+    height: 100vh;
+    display: inline-block;
+    background-color: #565656;
+    color: white;
+}
+
+.mentorsForm {
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    /* Bassically this blue box would hold the form and or a scroll box for it. */
 }
 
 
