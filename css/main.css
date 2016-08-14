@@ -82,10 +82,17 @@ h1 {
 
 /*-------------------------------- Councillors ------------------------------*/
 
-#team {}
-
 #team h1 {
     text-align: center;
+    margin: 0 auto;
+    background: linear-gradient(to right, rgba(86, 86, 86, 0.8) 0%, rgba(239, 61, 53, 0.8) 50%, rgba(86, 86, 86, 0.8) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-background: cover;
+    -o-background: cover;
+    width: 100%;
+    height: 85px;
+    position: relative;
 }
 
 #team section {
@@ -106,7 +113,7 @@ h1 {
     width: 100%;
     margin: 0 auto;
     height: 100%;
-    top: 30px;
+    top: 0px;
     padding: 0px;
     opacity: 0;
     transition: all 0.4s ease-in-out;
@@ -123,16 +130,11 @@ h1 {
 }
 
 #team section:hover div {
-    top: 10px;
     opacity: 1;
 }
 
 #team section:hover img {
     opacity: 0.025;
-}
-
-#team img {
-    width: 100%;
 }
 
 #team .profileSmaller {
@@ -184,7 +186,6 @@ h1 {
     width: 100%;
     height: 300px;
     position: relative;
-    vertical-align: baseline;
     margin-top: -20px;
 }
 
@@ -329,7 +330,7 @@ label {
 .homeBackground {
     opacity: 0.25;
     height: 100vh;
-    width: cover;
+    width: 100%;
     position: absolute;
 }
 
