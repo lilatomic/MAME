@@ -1,5 +1,48 @@
 Readme
 
+Thoughts on the recent work 11/08/2016
+
+AboutUS:
+the 3 3 3 4 grid looks off, 3 3 3 3 1 maybe? You dont want different sized tiles. on a subconcious level people will think less of those positions.
+
+The image width should made the hover over width
+still need a footer , something before the team and something after
+
+ContactUS:
+minimalism is nice, but its defintely missing something on this page
+spice up your form a bit
+look for some inspiration
+
+DesignTeams:
+I think duplicating the same style as your team makes this look tacky. There must be a better way of doing this
+Find a vector of each of the vehicles if you can and play with the typography of each (we can talk about this) have the images/type link to their website , and below your design team title, explain what the design teams are/ what their connection is to mame and the EUS. why are they important, what do they have to do with mechanical engineering?
+
+
+Home:
+Looks dope, dont need the background image, would be cool if we could animate your cogs a bit (like the ones that make up the m part) and have the nav fade in. I dont think you want your news feed on your home page. Mame isnt an event, its an organization. You want to promote your organization. Maybe quick links to what mame is, and how people can find information
+People can always go check your fb,twitter etc shit on their own. If they are coming to your site they want info, not the pictures of the recent pubcrawl mame hosted
+
+
+Mentoring: 
+whats with this page?
+
+So as i understand it, is your heirachy
+
+-home
+-school calender
+-overhead at mame blog?
+-get involved
+ - design teams
+ - other involvement
+-academic extras
+  -mentoring
+  -coursepacks
+-contact-us
+
+If i were trying to make sense of it, id do it this way.
+
+---------------------------------------------------------------------------
+
 So I figured it would help if i explained all the changes i made, where these files are now and just why i did what i did
 
 1. Version control
