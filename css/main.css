@@ -184,7 +184,7 @@ h1 {
 /*------------------------------Contact Us-------------------------------------*/
 
 #contactUs {
-    padding-top: 175px;
+    padding-top: 150px;
     width: 49.5%;
     height: 100vh;
     background-color: white;
@@ -235,8 +235,19 @@ h1 {
 }
 
 #contactUs div {
-    padding-top: 50px;
+    padding-top: 0px;
     width: 80%;
+    margin: 0 auto;
+}
+
+#contact-area form {
+    padding-top: 30px;
+}
+
+.left img {
+    padding-top: 30px;
+    display: block;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -407,6 +418,41 @@ label {
     margin: 0 auto;
     margin-top: 30px;
     /* Bassically this blue box would hold the form and or a scroll box for it. */
+}
+
+
+/*---------------------------------Footer---------------------------------------*/
+
+.footerAll {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #565656;
+}
+
+a {
+    color: inherit;
+    transition: all 0.5s ease;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ef3d35;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.footerLinks {
+    -webkit-margin-before: 1.5em;
+    -webkit-margin-after: 1.5em;
+}
+
+
+/*Not sure why the / is remaining the same even with bold */
+
+.footerLinks span {
+    font-weight: bold;
+    font-weight: 600;
 }
 
 
