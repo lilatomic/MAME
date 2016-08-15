@@ -12,9 +12,94 @@
 <body>
     <header id="header">
     </header>
-    <section>
+    <section id="bannerFAQ">
+        <h1>FAQ</h1>
+    </section>
+    <!-- Possibly not needed; modelled after OAP site
+    <section id="FAQ">
+        <div>
+            <div class="question">
+                <h3>
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#answer">What do I need to get into OAP? <i class="fa fa-plus Tc-a"></i></a>
+                </h3>
+            </div>
+            <div id="answer" class="panel-collapse collapse ">
+                <div class="answerBody">
+                    To get into OAP you are required to be over 18 years of age and have a valid government issued photo ID and be a McGill student. Fear not if you aren't a McGill student, as you can get in as long as you are with a McGill student at the time of entry.
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+    <section id="FAQ">
+        <button class="accordion">
+            <h3>How can I stay up to date with all MAME events?</h3></button>
+        <div class="answer">
+            <p>First and foremost, check the newsletter (read it!), and or visit our facebook page. You can also keep your eye out for posters and class announcements. You are always welcome to stop by the office (MC120), someone is almost always there!</p>
+        </div>
+        <button class="accordion">
+            <h3>How can I get involved with MAME?</h3></button>
+        <div class="answer">
+            <p>All important information about getting involved can be found on our Getting Involved page, so check it out! Otherwise, the most common way to get started is to simply attend events!! Beyond that, there are lots of ways to pitch in, with varying levels of commitment. Never be afraid to ask questions either!</p>
+        </div>
+        <button class="accordion">
+            <h3>How is MAME funded?</h3></button>
+        <div class="answer">
+            <p>Our bottom line draws from 3 main pools: student fees, EUS and departmental funding, and external industry/corporate sponsorships.</p>
+        </div>
+        <button class="accordion">
+            <h3>What kind of events can I expect this year?</h3></button>
+        <div class="answer">
+            <p>MAME programming falls into three main categories: academic, professional, and social. Find out more on our Events page!</p>
+        </div>
+        <button class="accordion">
+            <h3>I’m confused about my courses - who should I talk to?</h3></button>
+        <div class="answer">
+            <p>Especially if you are ‘off-stream’ (meaning you are not strictly following the academic curriculae set out here), the McGill Engineering Student Centre is your best bet for guaranteed advice. However, talking to upper year mechies or dropping by office with questions is always a good idea! It is quite likely somebody has been in your situation before.
+                <br>
+                <br>If these methods don’t prove fruitful, you can contact our VP Academic, Raphi Zonis, at mame.vpacademic@mcgilleus.ca.</p>
+        </div>
+        <button class="accordion">
+            <h3>I have an academic concern - where should I direct it?</h3></button>
+        <div class="answer">
+            <p>It is part of our mandate to voice the concerns of our students to faculty members, and as such you can rest assured these will be treated very seriously. Feel free to talk to your Year Representative, the MAME president or send a direct email to our VP Academic (vpacademic@mcgilleus.ca)</p>
+        </div>
+        <button class="accordion">
+            <h3>I have a more general concern - Who can I speak to?</h3></button>
+        <div class="answer">
+            <p>Perhaps the most important aspect of our mandate is to ensure all mechies feel safe, secure and welcomed here in McGill Engineering. Contact our president, Dimitri (at president@mcgilleus.ca), directly to voice your concern and/or schedule a meeting to discuss anything. This correspondence is, of course, confidential; your case will be treated with both the utmost seriousness and discretion.
+                <br>
+                <br> Other McGill bodies who could help you out include (click below):
+                <br>
+                <a href="http://eusequity.ca/contact"><b>EUS Equity</b></a>
+                <br><a href="http://ssmu.mcgill.ca/nightline/"><b>McGill Nightline</b></a>
+                <br><a href="http://www.sacomss.org/wp/"><b>Sexual Assault Centre of the McGill Student Society</b></a>
+                <br>
+                <br> Please don’t hesitate to drop by the office for more information or with any concern - none are too trivial! It’s our job to make your Mech Eng experience the very best it can be!
+            </p>
+            <button class="accordion">
+                <h3>I LOVED E-Week/Faculty Olympics - could I become a captain?</h3></button>
+            <div class="answer">
+                <p>Of course! There will be a call for applications, and you will likely be asked to come in for an interview. #MakeMECHGreatAgain</p>
+            </div>
+            <button class="accordion">
+                <h3>I like video games. Where should I go?</h3></button>
+            <div class="answer">
+                <p>So do we. Drop by the office (MC120) and let the MAMECube rock your world.</p>
+            </div>
+        </div>
     </section>
 </body>
-<script type="text/javascript"></script>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function() {
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+    }
+}
+</script>
 
 </html>
