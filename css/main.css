@@ -184,19 +184,52 @@ h1 {
     -moz-background: cover;
     -o-background: cover;
     width: 100%;
-    height: 300px;
+    height: 250px;
     position: relative;
     margin-top: -20px;
 }
 
-.designTeams {
+#designTeamIntro div {
     text-decoration: bold;
     text-align: center;
     transform: translateY(30px);
 }
 
+#designTeams section {
+    width: 33%;
+    height: 600px;
+    display: inline-block;
+    padding: 0px;
+    overflow: hidden;
+    position: relative;
+}
 
-/* Note that I simply used the id "team" from the aboutUs html page for this. */
+#designTeams div {
+    height: 40%;
+    border-style: solid;
+}
+
+
+/* Not sure why the img is coming out of the DIV when it's defined as a box~ */
+
+#designTeams img {
+    zoom: 50%;
+    margin-left: 100px;
+    margin-top: -100px;
+    display: inline-block;
+}
+
+#designTeams h3 {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#designTeams p {
+    text-align: justify;
+    text-align-last: center;
+    padding: 10px 20px 20px 20px;
+}
 
 
 /*------------------------------Contact Us-------------------------------------*/
