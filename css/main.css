@@ -503,6 +503,72 @@ button.accordion:hover {
 }
 
 
+/*-------------------------------Get Involved-------------------------------------*/
+
+.#getInvolved {}
+
+#getInvolved div {
+    display: inline-block;
+    width: 39%;
+    height: 325px;
+    background-color: #565656;
+    vertical-align: top;
+    padding: 25px;
+}
+
+#getInvolved img {
+    width: 39%;
+    height: 325px;
+    opacity: 0.5;
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+}
+
+.opacityT,
+.opacityT-i {
+    transition: opacity 0.5s ease-in-out;
+}
+
+#blurb:hover .opacityT-i {
+    opacity: 0;
+}
+
+#blurb:hover p {
+    opacity: 1;
+    z-index: 3;
+}
+
+#blurb:hover .opacityT {
+    opacity: 1;
+}
+
+#getInvolved h1 {
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 5px;
+    color: #565656;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#getInvolved h2 {
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+#getInvolved p {
+    text-align: justify;
+    text-align-last: center;
+    opacity: 0;
+    color: white;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+
 /*---------------------------------Footer---------------------------------------*/
 
 .footerAll {
