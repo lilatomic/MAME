@@ -632,6 +632,8 @@ a:hover {
 #header li {
     display: inline-block;
     border-right: 1px solid #bbb;
+    line-height: 3px;
+    margin: 15px 0;
 }
 
 #header li:last-child {
