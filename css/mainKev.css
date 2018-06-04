@@ -1,3 +1,21 @@
+/*--- nav --*/
+
+nav .brand-logo img{
+    height: 50px;
+    /*margin-left: 10px;*/
+}
+
+nav.nav-center ul {
+    text-align: center;
+}
+nav.nav-center ul li {
+    display: inline;
+    float: none;
+}
+nav.nav-center ul li a {
+    display: inline-block;
+}
+
 /*----------------------------------- Reset ---------------------------------*/
 /*If you're reading this, please don't cringe at this awful code - there's a reason why im in mech not in comp eng*/
 
