@@ -5,23 +5,134 @@
     <title>MAME</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/mainKev.css">
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
 </head>
 
 <body>
-    <header id="header">
-        <ul>
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="get-involved.html">Students</a></li><br>
+        <li><a href="get-involved-sponsors.html">Sponsors</a></li>
+    </ul>
+    <ul id="dropdown2" class="dropdown-content">
+        <li><a href="get-involved.html">Students</a></li>
+        <li><a href="get-involved-sponsors.html">Sponsors</a></li>
+    </ul>
+    <nav class="nav-center">
+    <div class="nav-wrapper">
+        <a href="home.html" class="brand-logo"><img src="img/mameLogoTransparent.png"></a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="hide-on-med-and-down">
             <li><a href="home.html">Home</a></li>
             <li><a href="about-us.html">About Us</a></li>
             <li><a href="design-teams-2.html">Design Teams</a></li>
             <li><a href="events.html">Events</a></li>
-            <li><a class="active" href="get-involved.html">Get Involved</a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Get Involved</a></li>
+            <li><a href="Resources.html">Resources</a></li>
             <li><a href="mentoring.html">Mentorship</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="contact-us.html">Contact</a></li>
         </ul>
-    </header>
+        <ul class="side-nav" id="mobile-demo">
+            <li><a href="home.html">Home</a></li><br>
+            <li><a href="about-us.html">About Us</a></li><br>
+            <li><a href="design-teams-2.html">Design Teams</a></li><br>
+            <li><a href="events.html">Events</a></li><br>
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Get Involved</a></li><br>
+            <li><a href="Resources.html">Resources</a></li><br>
+            <li><a href="mentoring.html">Mentorship</a></li><br>
+            <li><a href="faq.html">FAQ</a></li><br>
+            <li><a href="contact-us.html">Contact</a></li>
+        </ul>
+    </div>
+    </nav>
+    <section id="banner">
+        <div class="bannerAll bannerText bannerImage">
+            <h1>GET INVOLVED - STUDENTS</h1>
+        </div>
+    </section>
+    <section>
+        <div class="col-sm-4">
+            <section class="designGrid">
+                <div>
+                    <h3 style="text-align: center;">First Year Council</h3>
+                    <p>The First Year Council (FYC) is a committee under the MAME Council run by U0/U1 students. They organize events specifically for first year mechies in order to help them transition and socialize during their first year at McGill. Interested in being on the committee? Come to the MAME office any weekday between 10am and 4pm to ask us about it!
+                    </p>
+                </div>
+                <img class="img-responsive" src="img/FYCLogo.png" />
+            </section>
+        </div>
+        <div class="col-sm-4">
+            <section class="designGrid">
+                <div>
+                    <h3 style="text-align: center;">Social Committee</h3>
+                    <p>The Social Committee is a committee under the MAME Council run by mechanical engineering students from U0 to U100. They organize smaller socials such Gaming Tournaments, Movie Nights, Billiard Nights, 3MAN, Pancake Breakfast, Bluesy Brunch and more! Interested in being involved in all the awesome things MAME’s social committee does? Send an email to mame.vpevents@mcgilleus.ca you could be planning/creating/organizing fun events before you know it!
+                    </p>
+                </div>
+                <img class="img-responsive" src="img/SocialCommLogo.png" />
+            </section>
+        </div>
+        <div class="col-sm-4">
+            <section class="designGrid">
+                <div>
+                    <h3 style="text-align: center;">Academic Committee</h3>
+                    <p>The academic committee is a group of dedicated students who are looking to give back to the MAME community. The purpose of this committee is to support the VP Academic in his/hers’ projects throughout the year. Ranging from the workshop safety committee to the MAME Survival guide (link to resources tab), this committee will reward its members by allowing them to work on projects that will have long lasting and extremely positive and rewarding consequences. If you’re interested in being part of this amazing committee, fill out this application. 
+                        <br>
+                        <br> Application: ____TBD____
+                    </p>
+                </div>
+                <img class="img-responsive" src="img/AcadCom.png" />
+            </section>
+        </div>
+    </section>
+    <section>
+        <div class="col-sm-4">
+            <section class="designGrid">
+                <div>
+                    <h3 style="text-align: center;">Volunteering</h3>
+                    <!--This should probably be on the image, not inside-->
+                    <p>Volunteers consist of people under the MAME Council who are U0 to U100 mechanical engineering students. Volunteers are crucial when we need that extra man(-woman) power during our events. Whether it’s being in charge serving food or drinks at Blues Pub or Bluesy Brunch, lending a hand at Apartment Crawl, helping us setup for events, MAME has a job for you! Sign up to get emails when we are calling out for volunteers.
+                    </p>
+                </div>
+                <img class="img-responsive" src="img/MAMEvolunteer.png" />
+            </section>
+        </div>
+        <div class="col-sm-4">
+            <section class="designGrid">
+                <div>
+                    <h3 style="text-align: center;">Communications Committee</h3>
+                    <p>The Communications Committee is a committee under the MAME Council run by the elected Ureps and any mechie who wants to join. Their main goal is to keep our mechies updated on everything MAME-related such as events, opportunities and important resources through different platforms like the website, the weekly Newsletter and social media. We also need people specifically for photography to successfully document and organize photos from MAME's many diverse events, whether you have your own camera or not! If communications is something that interests you, send an email to mame.vpcomm@mcgilleus.ca!
+                    </p>
+                </div>
+                <img class="img-responsive" src="img/CommComm.png" />
+            </section>
+        </div>
+        <div class="col-sm-4">
+            <section class="designGrid">
+                <div>
+                    <h3 style="text-align: center;">MAME Council &amp; Elections</h3>
+                    <p style="font-size: 14px;">MAME Council is run by representatives elected by the mechanical engineering students at McGill. There are eight executive positions: President, VP Internal, VP External, VP Finance, VP Academic, VP Events, VP Communications and VP Administration. Each executive has their respective responsibilities, but almost every task is completed with the help of everyone.
+                    <br><br>
+                    There are also class reps for each year. Their job is to keep their peers informed about MAME and EUS news and events. They also work to promote departmental and faculty spirit, and to give a voice to student concerns.
+                    <br><br>
+                    Want to join MAME Council? MAME holds elections every spring, and everyone is encouraged to run regardless of experience. It is important to note that the positions of U0, U1 Rep and VP Administration are reserved for first year mechanical engineering students. Therefore, the elections are held in the fall.
+                    </p>
+                </div>
+                <img class="img-responsive" src="img/MechEngDepart.png" />
+            </section>
+        </div>
+    </section>
+    <!--This was the old style of getInvolved. Keep just in case. -->
+    <!--
     <section id="getInvolved">
         <section id="blurb">
             <img class="opacityT-i left" src="img/FYC.jpg" />
@@ -60,6 +171,30 @@
             </div>
         </section>
     </section>
+    -->
+    <footer class="footerAll">
+        <div class="row">
+            <p class="footerLinks">
+                <a href="contact-us.html">Contact</a> <span>/</span> <a href="about-us.html">The Team</a> <span>/</span> <a href="events.html">Events</a>
+            </p>
+        </div>
+        <div class="row">
+            <ul class="social-network social-circle">
+                <li><a href="https://www.facebook.com/mamemcgill/" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="http://www.linkedin.com/company/mcgill-association-of-mechanical-engineering" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/mame_mcgill/" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.snapchat.com/add/mame_mcgill" class="icoSnapchat" title="Snapchat"><i class="fa fa-snapchat-ghost"></i></a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <p>
+            Sponsored by 
+            <a href="https://www.stickermule.com/ca"><img src="img/stickermule-logo.png" style="height: 41px; width: 150px;"></a>
+            <br>
+            © McGill Association of Mechanical Engineers (MAME) 2016
+            </p>
+        </div>
+    </footer>
 </body>
 <script type="text/javascript"></script>
 

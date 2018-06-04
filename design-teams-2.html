@@ -5,72 +5,133 @@
     <title>MAME</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/mainKev.css">
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
 </head>
 
 <body>
-    <header id="header">
-        <ul>
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="get-involved.html">Students</a></li><br>
+        <li><a href="get-involved-sponsors.html">Sponsors</a></li>
+    </ul>
+    <ul id="dropdown2" class="dropdown-content">
+        <li><a href="get-involved.html">Students</a></li>
+        <li><a href="get-involved-sponsors.html">Sponsors</a></li>
+    </ul>
+    <nav class="nav-center">
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo"><img src="img/mameLogoTransparent.png"></a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="hide-on-med-and-down">
             <li><a href="home.html">Home</a></li>
             <li><a href="about-us.html">About Us</a></li>
             <li><a class="active" href="design-teams-2.html">Design Teams</a></li>
             <li><a href="events.html">Events</a></li>
-            <li><a href="get-involved.html">Get Involved</a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Get Involved</a></li>
+            <li><a href="Resources.html">Resources</a></li>
             <li><a href="mentoring.html">Mentorship</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="contact-us.html">Contact</a></li>
         </ul>
-    </header>
+        <ul class="side-nav" id="mobile-demo">
+            <li><a href="home.html">Home</a></li><br>
+            <li><a href="about-us.html">About Us</a></li><br>
+            <li><a class="active" href="design-teams-2.html">Design Teams</a></li><br>
+            <li><a href="events.html">Events</a></li><br>
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Get Involved</a></li><br>
+            <li><a href="Resources.html">Resources</a></li><br>
+            <li><a href="mentoring.html">Mentorship</a></li><br>
+            <li><a href="faq.html">FAQ</a></li><br>
+            <li><a href="contact-us.html">Contact</a></li>
+        </ul>
+    </div>
+    </nav>
     <section class="bannerAll bannerText">
-        <h1>DESIGN TEAMS</h1>
+        <h1>DESIGN TEAMS</h1> 
     </section>
-    <section id="designTeams">
-        <section>
-            <img src="img/FSAE1.jpg" />
+    <!-- Make a container with 2 rows, each row will have a col-sm-4 -->
+    <section>
+        <section class="row rowPadding">
+            <div class="col-sm-4">
+                <img class="img-responsive designTeamsIMG" src="img/FSAE1.jpg" />
+                <div id="designTeams">
+                    <h3>McGill Racing Team</h3>
+                    <p class="designTeamsLinks">Founded in 1994, the McGill Racing Team was created with one goal in mind: complement the knowledge acquired in class by providing the wisdom of how to use it. This is done through the design, manufacturing and testing of a single-seater prototype formula SAE racecar. After eight months of design and construction, the vehicle is ready for competition, traveling the world each summer to compete with the best universities. McGill Racing Team members make friends and learn what it means to be part of a global engineering community. Check out their <a href="http://fsae.mcgill.ca/">website</a> and find them on <a href="https://www.facebook.com/mcgillracingteam">facebook</a>!
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <img class="img-responsive designTeamsIMG" src="img/EV1.png" />
+                <div id="designTeams">
+                    <h3>McGill Formula Electric</h3>
+                    <p class="designTeamsLinks">McGill Formula Electric is an engineering student design team that designs, builds and races a 100% electric prototype Formula E race car. As one of the first university teams in North America to develop electric vehicles, the team has a strong base of knowledge from which to build. Tracing its roots to the Formula Hybrid competition and the Clean Snowmobile Challenge, both of which McGill has won several times, the team competes on the international level against universities from around the world. McGill Formula Electric is dedicated to learning about alternative means of transportation as well as cutting edge sustainable technology. Students from all faculties, departments and disciplines are welcome to join! Check out their <a href="https://www.facebook.com/McGillEv">facebook</a>! page and <a href="http://www.mcgillev.com/">website</a> for more info!</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <img class="img-responsive designTeamsIMG" src="img/baja.png" />
+                <div id="designTeams">
+                    <h3>McGill Baja Racing</h3>
+                    <p class="designTeamsLinks">What is a Baja? A Baja is an off- road racing vehicle, meshing the characteristics of an ATV and a dune buggy to craft an incredible racing machine. Every year the McGill Baja Racing Team designs, builds, and races a vehicle built from scratch at international collegiate competitions. The competitions comprise a number of events, focusing on both the quality and ingenuity of the design as well as racing ability. These characteristics are demonstrated during a four hour endurance race, pitting all vehicles head to head. With consistent top performances and incredible team spirit, the McGill Baja Racing Team is like no other. Check out their <a href="http://baja.mcgilleus.ca/">website</a> and <a href="https://www.facebook.com/mcgillbaja/">facebook</a> page for more info!</p>
+                </div>
+            </div>
         </section>
-        <section>
-            <img src="img/EV1.png" />
+    </section>
+    <section>
+        <section class="row rowPadding">
+            <div class="col-sm-4">
+                <img class="img-responsive designTeamsIMG" src="img/rocket3.jpg" />
+                <div id="designTeams">
+                    <h3>McGill Rocket Team</h3>
+                    <p class="designTeamsLinks">Founded in 2014, the McGill Rocket Team designs and builds experimental Sounding Rockets. The team participates in an annual inter-collegiate competition whereby the task is to carry a 10 lb payload to an altitude of 10 000 ft (30 000 ft for Advanced Category). The team must ensure that the fibreglass/carbon fiber rocket flies straight, reaches the correct altitude and is safely recovered with as little damage as possible. Being a young team there are still many improvements to be made to future rockets, and they want your help! If you want to gain valuable hands-on engineering experience, join the McGill Rocket Team! Check out their <a href="https://www.facebook.com/McGillRocketTeam/">facebook</a> page and <a href="http://www.mcgillrocketteam.com/">website</a> for more information!</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <img class="img-responsive designTeamsIMG" src="img/robotics1.png" />
+                <div id="designTeams">
+                    <h3>McGill Robotics</h3>
+                    <p class="designTeamsLinks">McGill Robotics is a student design team that aims to foster interest in robotics through competition and create a core community at McGill via the “Team Before Machine” philosophy, prioritizing team bonding and growth along with engineering accomplishment. The team is composed of three major robotics projects: an autonomous underwater vehicle (AUV), a rover built for Mars, and a fixed-wing unmanned air system (UAS). Check out their <a href="http://mcgillrobotics.com">website</a> and <a href="https://www.facebook.com/mcgillrobotics/">facebook</a> page for more info!</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <img class="img-responsive designTeamsIMG" src="img/conoe2.jpg" />
+                <div id="designTeams">
+                    <h3>Concrete Conoe</h3>
+                    <p class="designTeamsLinks">The McGill Concrete Canoe Team is among McGill’s newest design teams and is comprised of students dedicated to the design and construction of a canoe made entirely of concrete. The catch? The canoe must float completely submerged below the surface of the water. Supported by one of the best schools in Canada, the team has aggressively climbed the standings in only a few years of existence, with no sign of slowing down. Their members are passionate and innovative - they never stop raising the bar. Check out their <a href="http://mcgillconcretecanoe.com/">website</a> and <a href="https://www.facebook.com/CanoeMcgill/">facebook</a> page for more info!</p>
+                </div>
+            </div>
         </section>
-        <section>
-            <img src="img/baja.png" />
-        </section>
-        <div>
-            <h3>McGill Racing Team</h3>
-            <p>Founded in 1994, the McGill Racing Team was created with one goal in mind: complement the knowledge acquired in class by providing the wisdom of how to use it. This is done through the design, manufacturing and testing of a single-seater prototype formula SAE racecar. After eight months of design and construction, the vehicle is ready for competition, traveling the world each summer to compete with the best universities. Last summer... ( list a major achievement by this team-will talk to Olivia to help with this part). McGill Racing Team members make friends and learn what it means to be part of a global engineering community. Check out their website or find them on facebook!
+    </section>
+    <footer class="footerAll">
+        <div class="row">
+            <p class="footerLinks">
+                <a href="contact-us.html">Contact</a> <span>/</span> <a href="about-us.html">The Team</a> <span>/</span> <a href="events.html">Events</a>
             </p>
         </div>
-        <div>
-            <h3>McGill Formula Electric</h3>
-            <p>McGill Formula Electric is an engineering student design team that designs, builds and races a 100% electric prototype Formula E racecar. As one of the first university teams in North America to develop electric vehicles, the team has a strong base of knowledge from which to build. Tracing its roots to the Formula Hybrid competition and the Clean Snowmobile Challenge, both of which McGill has won several times, the team competes on the international level against universities from around the world. McGill Formula Electric is dedicated to learning about alternative means of transportation as well as cutting edge sustainable technology. Students from all faculties, departments and disciplines are welcome to join! Check out their facebook page and website for more info!</p>
+        <div class="row">
+            <ul class="social-network social-circle">
+                <li><a href="https://www.facebook.com/mamemcgill/" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="http://www.linkedin.com/company/mcgill-association-of-mechanical-engineering" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/mame_mcgill/" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.snapchat.com/add/mame_mcgill" class="icoSnapchat" title="Snapchat"><i class="fa fa-snapchat-ghost"></i></a></li>
+            </ul>
         </div>
-        <div>
-            <h3>McGill Baja Racing</h3>
-            <p>What is a Baja? A Baja is an off- road racing vehicle, meshing the characteristics of an ATV and a dune buggy to craft an incredible racing machine. Every year the McGill Baja Racing Team designs, builds, and races a vehicle built from scratch at international collegiate competitions. The competitions comprise a number of events, focusing on both the quality and ingenuity of the design as well as racing ability. These characteristics are demonstrated during a four hour endurance race, pitting all vehicles head to head. With consistent top performances and incredible team spirit, the McGill Baja Racing Team is like no other. Check out their website or facebook page for more info!</p>
+        <div class="row">
+            <p>
+            Sponsored by 
+            <a href="https://www.stickermule.com/ca"><img src="img/stickermule-logo.png" style="height: 41px; width: 150px;"></a>
+            <br>
+            © McGill Association of Mechanical Engineers (MAME) 2016
+            </p>
         </div>
-        <section>
-            <img src="img/rocket3.jpg" />
-        </section>
-        <section>
-            <img src="img/robotics1.png" />
-        </section>
-        <section>
-            <img src="img/conoe2.jpg" />
-        </section>
-        <div>
-            <h3>McGill Rocket Team</h3>
-            <p> Founded in 2014, the McGill Rocket Team designs and builds experimental Sounding Rockets. The team participates in an annual inter-collegiate competition whereby the task is to carry a 10 lb payload to an altitude of 10 000 ft (25 000 ft for Advanced Category). The team must ensure that the fibreglass/carbon fiber rocket flies straight, reaches the correct altitude and is safely recovered with as little damage as possible. Being a young team there are still many improvements to be made to future rockets, and we want your help! If you want to gain valuable hands-on engineering experience join the McGill Rocket Team today! Check out our facebook page for more information!</p>
-        </div>
-        <div>
-            <h3>McGill Robotics</h3>
-            <p>McGill Robotics is a student design team that aims to foster interest in robotics through competition and create a core community at McGill via the “Team Before Machine” philosophy, prioritizing team bonding and growth along with engineering accomplishment. The team is composed of three major robotics projects: an autonomous underwater vehicle (AUV), a rover built for Mars, and a fixed-wing unmanned air system (UAS). Check out their website for more info!</p>
-        </div>
-        <div>
-            <h3>Concrete Conoe</h3>
-            <p>The McGill Concrete Canoe Team is among McGill’s newest design teams and is comprised of students dedicated to the design and construction of a canoe made entirely of concrete. The catch? The canoe must float completely submerged below the surface of the water. Supported by one of the best schools in Canada, the team has aggressively climbed the standings in only a few years of existence, with no sign of slowing down. Our members are passionate and innovative-we never stop raising the bar. Check out their website or facebook page for more info!</p>
-        </div>
-    </section>
+    </footer>
 </body>
 <script type="text/javascript"></script>
 

@@ -1430,9 +1430,9 @@ figure {
 img {
     vertical-align: middle
 }
-
+/*
 .carousel-inner>.item>a>img,
-.carousel-inner>.item>img,
+.carousel-inner>.item>img,*/
 .img-responsive,
 .thumbnail a>img,
 .thumbnail>img {
@@ -1509,7 +1509,7 @@ h5,
 h6 {
     font-family: inherit;
     font-weight: 500;
-    line-height: 1.1;
+    /*line-height: 1.1;*/
     color: inherit
 }
 
@@ -2066,8 +2066,8 @@ pre code {
 .col-xs-9 {
     position: relative;
     min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px
+    padding-right: 0px;
+    padding-left: 0px
 }
 
 .col-xs-1,
@@ -2082,7 +2082,7 @@ pre code {
 .col-xs-7,
 .col-xs-8,
 .col-xs-9 {
-    float: left
+    float: none;
 }
 
 .col-xs-12 {
@@ -7444,7 +7444,7 @@ button.close {
     border-right-width: 0;
     border-left-color: #fff
 }
-
+/*
 .carousel {
     position: relative
 }
@@ -7697,7 +7697,7 @@ button.close {
         bottom: 20px
     }
 }
-
+*/
 .btn-group-vertical>.btn-group:after,
 .btn-group-vertical>.btn-group:before,
 .btn-toolbar:after,

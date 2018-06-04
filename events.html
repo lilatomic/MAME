@@ -5,69 +5,227 @@
     <title>MAME</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/mainKev.css">
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='fullcalendar/fullcalendar.css' />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <script src='fullcalendar/lib/jquery.min.js'></script>
+    <script src='fullcalendar/lib/moment.min.js'></script>
+    <script src='fullcalendar/fullcalendar.js'></script>
+    <script type='text/javascript' src='fullcalendar/gcal.js'></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type='text/javascript'>
+    $(document).ready(function() {
+
+        // page is now ready, initialize the calendar...
+
+        $('#calendar').fullCalendar({
+            // put your options and callbacks here
+            theme: false,
+            googleCalendarApiKey: 'AIzaSyD8p99_FTMfnEphFbj8rnMLy1OiwpWEck4',
+            events: {
+                googleCalendarId: 'dnccjppaai51jb3kqenpomrj2k@group.calendar.google.com'
+            }
+        })
+
+    });
+    </script>
+
 </head>
 
 <body>
-    <header id="header">
-        <ul>
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="get-involved.html">Students</a></li><br>
+        <li><a href="get-involved-sponsors.html">Sponsors</a></li>
+    </ul>
+    <ul id="dropdown2" class="dropdown-content">
+        <li><a href="get-involved.html">Students</a></li>
+        <li><a href="get-involved-sponsors.html">Sponsors</a></li>
+    </ul>
+    <nav class="nav-center">
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo"><img src="img/mameLogoTransparent.png"></a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="hide-on-med-and-down">
             <li><a href="home.html">Home</a></li>
             <li><a href="about-us.html">About Us</a></li>
             <li><a href="design-teams-2.html">Design Teams</a></li>
             <li><a class="active" href="events.html">Events</a></li>
-            <li><a href="get-involved.html">Get Involved</a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Get Involved</a></li>
+            <li><a href="Resources.html">Resources</a></li>
             <li><a href="mentoring.html">Mentorship</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="contact-us.html">Contact</a></li>
         </ul>
-    </header>
-    <section class="bannerAll bannerText">
-        <h1>EVENTS CALENDAR</h1>
-    </section>
-    <section id="calendar">
-        <!-- Need to put events calendar here. Same style as the one you found, BJ. 
-    	Would love functionality such as linking to FB event & possibly the option 
-    	to add to google calendar or something? -->
-    </section>
-    <section id="events">
-        <div>
-            <h2><b>SOCIAL</b></h2>
-        </div>
-        <div>
-            <h2><b>ACADEMIC</b></h2>
-        </div>
-        <div>
-            <h2><b>PROFESSIONAL</b></h2>
-        </div>
-        <!-- SOCIAL EVENTS HERE-->
-        <ul>
-            <li>Meet & Greet</li>
-            <li>Blues Pub</li>
-            <li>Holiday Banquet</li>
-            <li>Social Committee Randoms</li>
-            <li>Pancake House</li>
-            <li>End of Year Banquet</li>
+        <ul class="side-nav" id="mobile-demo">
+            <li><a href="home.html">Home</a></li><br>
+            <li><a href="about-us.html">About Us</a></li><br>
+            <li><a href="design-teams-2.html">Design Teams</a></li><br>
+            <li><a class="active" href="events.html">Events</a></li><br>
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Get Involved</a></li><br>
+            <li><a href="Resources.html">Resources</a></li><br>
+            <li><a href="mentoring.html">Mentorship</a></li><br>
+            <li><a href="faq.html">FAQ</a></li><br>
+            <li><a href="contact-us.html">Contact</a></li>
         </ul>
-        <!-- ACADEMIC EVENTS HERE-->
-        <ul>
-            <li>Academic Forum</li>
-            <li>MAME Book Sale</li>
-            <li>Software Tutorials</li>
-            <li>Mechatronix</li>
-            <li>CAD|MADness</li>
-            <li>Professor Wine & Cheese</li>
-        </ul>
-        <!-- PROFESSIONAL EVENTS HERE-->
-        <ul>
-            <li>Mech Madness</li>
-            <li>Mech Mildness</li>
-            <li>Industry Dinner</li>
-            <li>Speed Networking</li>
-            <li>Lunch & Learns</li>
-            <li>&nbsp</li>
-        </ul>
+    </div>
+    </nav>
+    <section class="col-sm-12 bannerAll bannerText">
+        <h1>EVENTS</h1>
     </section>
+    <section class="col-sm-12">
+        <div id="calendar">
+            <!-- Need to put events calendar here. Same style as the one you found, BJ. 
+        Would love functionality such as linking to FB event & possibly the option 
+        to add to google calendar or something? -->
+        </div>
+    </section>
+    <section>
+        <div class="col-sm-4">
+            <div class="eventDescriptionsTitle">
+                <h2><b>SOCIAL</b></h2>
+            </div>
+            <div class="eventDescriptions">
+            <u1 class="collapsible popout" data-collapsible="accordion">
+                <li><div class="collapsible-header">Blues Pub</div>
+                    <div class="collapsible-body">
+                    <span>As you may or may not know, Blues Pub is a student run bar held nearly every Friday from 4PM - 9PM in the McConnell Engineering Building Common Room. Here, students can get all the BEvERages and cheesy snacks their heart desires! Once per semester, MAME is responsible for hosting Blues Pub and encourages all mechies to join us. The profits from Blues Pub goes back to MAME’s events (and to make tickets to events cheaper or even free!)</span> 
+                    </div>
+                </li>
+                <li><div class="collapsible-header">Meet &amp; Greet</div>
+                    <div class="collapsible-body">
+                    <span>At the start of every academic year, MAME hosts a meet &amp; greet for all mechies to meet the new council! This is a great opportunity for students to speak to those representing them and also to find out how to get involved. The meet &amp; greet is also where the different committees do their initial round of recruiting!</span>
+                    </div
+>                </li>
+                <li><div class="collapsible-header">End of Semester Banquets</div>
+                    <div class="collapsible-body">
+                    <span>Held at the end of the each semester, MAME’s banquets are an event not to miss! Student have the chance to join their fellow mechies at a fancy restaurant and celebrate the end of the semester and the end of our sleep before exams start!</span>
+                    </div>
+                </li>
+                <li><div class="collapsible-header">Social Committee Randoms</div>
+                    <div class="collapsible-body">
+                    <span>The Social Committee is in charge of enriching student and social life through the means of small but relaxing events. Whether it is scheduled Movie Nights, Pancake Breakfast, Coffee House, Bluesy Brunch (a brunch right before Blues Pub), all-you-can-eat sushi outings, Exams Snacks Day, Gaming Tournaments, Poutine Crawls, Apartment Crawls, 3MAN and much more, there is a variety of events to choose from! Keep an eye out for these events when you want to take a small break from school.</span>
+                    </div>
+                </li>
+                <li><div class="collapsible-header">E-Week</div>
+                    <div class="collapsible-body">
+                    <span>Engineering Week, most commonly known as E-Week, is a 5-day, 5-night event hosted by the EUS to promote inter-departmental friendly competition. Departments go through different series of tasks, challenges, and design competitions to claim the glorious E-Week Trophy (and bragging rights) for the following 365 days.  MAME loves E-Week as it brings our mechies closer and it strengthens our bond with the other engineering departments. Everyone is welcome to join the fun!! Keep an eye out for registration period! </span>
+                    </div>
+                </li>
+                <li><div class="collapsible-header">Swag Sale</div>
+                    <div class="collapsible-body">
+                    <span>Alright, this may not be a social event but it may as well be! What’s more social than showing off our McGill Mechanical Engineering Pride? Students can do so by purchasing McGill Mechanical Engineering adorned hoodies, crewnecks, sweatpants, tanks, hats, scarves, patches and much more at our MECH Swag Sale every semester! </span>
+                    </div>
+                </li>
+            </u1>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="eventDescriptionsTitle">
+                <h2><b>ACADEMIC</b></h2>
+            </div>
+            <div class="eventDescriptions">
+                <ul class="collapsible popout" data-collapsible="accordion">
+                <li><div class="collapsible-header">Academic Forum</div>
+                    <div class="collapsible-body">
+                    <span>Held towards the end of every semester, the Academic Forum is a great platform to relay questions and concerns about courses or the mechanical engineering curriculum in general to the department. The department chair and MAME Council are in attendance to hear students out! </span>
+                    </div>
+                </li>
+                <li><div class="collapsible-header">Software Tutorials</div>
+                    <div class="collapsible-body">
+                    <span>MAME hosts several FREE software tutorials such as VBA, MATLAB and LaTex to provide learning skills to our students outside of the classroom. Some of the coursepacks for these tutorials are available in the Resources tab.</span>
+                    </div>
+                </li>
+                <li><div class="collapsible-header">Mechatronics</div>
+                    <div class="collapsible-body">
+                    <span>MAME hosts several FREE software tutorials such as VBA, MATLAB and LaTex to provide learning skills to our students outside of the classroom. Some of the coursepacks for these tutorials are available in the Resources tab. </span>
+                    </div>
+                </li>
+                <li><div class="collapsible-header">Lab Tours</div>
+                    <div class="collapsible-body">
+                    <span>With the help of professors and graduate students, MAME hosts lab tours in order to expose students to the different research projects being worked on in our department. These lab tours are very useful to get a glimpse of the research projects available before applications for the <a href="https://www.mcgill.ca/engineering/students/current-students/undergraduate/research">SURE</a> program during the summer!</span>
+                    </div>
+                </li>
+                <li><div class="collapsible-header">CAD|Madness</div>
+                    <div class="collapsible-body">
+                    <span>CAD|Madness is a weekend long design competition organized by MAME. With the help of a team of 3 or 4 members, students have 36 hours to complete a design problem presented at the start of the weekend. The design competition concludes with the team presenting their CAD drawings and solution to judges. The top 3 teams have the chance to win cash prizes with the possibility of the 1st place design being manufactured.  </span>
+                    </div>
+                </li>
+                <li><div class="collapsible-header">MECH Talks</div>
+                    <div class="collapsible-body">
+                    <span>MECH talks is a week long event with each day constituting of our esteemed professors and some professionals sharing their journey in the field of mechanical engineering. MECH Talks is a great way to get insights on the different opportunities a degree in mechanical engineering can lead you to and hear directly from the people who made it! </span>
+                    </div>
+                </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="eventDescriptionsTitle">
+                <h2><b>PROFESSIONAL</b></h2>
+            </div>
+            <div class="eventDescriptions">
+                <ul class="collapsible popout" data-collapsible="accordion">
+                    <li><div class="collapsible-header">MECHMadness</div>
+                    <div class="collapsible-body">
+                    <span>MAME’s year kick off to an amazing start thanks to our favourite event: MECHMadness. MECHMadness takes place at a different city in Canada every year and is an annual multi-day industry tour. It consists of two days of industry tours at various companies with the evenings spent sightseeing and interacting with the city’s local engineering students. This event gives students the opportunity to discover the career opportunities a degree in mech eng can offer all across Canada while getting know to know their peers at McGill and other universities as well!  </span>
+                    </div>
+                </li>
+                <li><div class="collapsible-header">Speed Networking</div>
+                    <div class="collapsible-body">
+                    <span>Speed Networking is a terrific event for students to talk to company representatives in a more casual yet professional setting. Each table is hosted by an industry rep who talks to about 6-8 students for a certain amount of time. When the time is up, the students switch tables to then converse with the following professional at another table. It is the perfect event to learn about different career paths out there while practicing your communication skills.</span>
+                    </div>
+                </li>
+                <li><div class="collapsible-header">Industry Tours</div>
+                    <div class="collapsible-body">
+                    <span>MAME organizes various industry tours in Montreal throughout the year to expose students to different companies. Company representatives give a tour of their company and describe their daily activities as mechanical engineers at said company.</span>
+                    </div>
+                </li>
+                <li><div class="collapsible-header">Workshops</div>
+                    <div class="collapsible-body">
+                    <span>Workshops are an essential mini-event MAME offers to help our students learn the skills they need to land that dream internship, and eventually dream job. They are usually hosted by McGill alumni and students with internship experience. These workshops cover a broad range that will teach you how to approach company representatives and ensure they remember your name.  </span>
+                    </div>
+                </li>
+                <li><div class="collapsible-header">Info Sessions and Lunch &amp; Learns</div>
+                    <div class="collapsible-body">
+                    <span>To offer our students a variety of networking opportunities,, MAME invites companies and McGill alumni to host their individual Info Sessions and Lunch &amp; Learns. These events consist of professionals or McGill alumni sharing their journey after getting that undergraduate degree. It is a great way to peruse through the different options out there and hear from extraordinary people doing great things! </span>
+                    </div>
+                </li>
+                <li><div class="collapsible-header">Industry Dinner</div>
+                    <div class="collapsible-body">
+                    <span>MAME’s award winning Industry Dinner is a unique opportunity for students to engage with company representatives. Students are matched with industry professionals that they have showed an interest in with 6-7 other students. The three-course meal allows students and company representatives to interact in a comfortable social environment. Moreover, each company will have the opportunity to make a presentation about their organization during the night. The night concludes with a casual networking session that allows students to interact with companies they have not yet had the opportunity to meet. It a great event to network and learn about different companies interested in hiring future engineers!</span>
+                    </div>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footerAll">
+        <div class="row">
+            <p class="footerLinks">
+                <a href="contact-us.html">Contact</a> <span>/</span> <a href="about-us.html">The Team</a> <span>/</span> <a href="events.html">Events</a>
+            </p>
+        </div>
+        <div class="row">
+            <ul class="social-network social-circle">
+                <li><a href="https://www.facebook.com/mamemcgill/" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="http://www.linkedin.com/company/mcgill-association-of-mechanical-engineering" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/mame_mcgill/" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.snapchat.com/add/mame_mcgill" class="icoSnapchat" title="Snapchat"><i class="fa fa-snapchat-ghost"></i></a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <p>
+            Sponsored by 
+            <a href="https://www.stickermule.com/ca"><img src="img/stickermule-logo.png" style="height: 41px; width: 150px;"></a>
+            <br>
+            © McGill Association of Mechanical Engineers (MAME) 2016
+            </p>
+        </div>
+    </footer>
 </body>
 <script type="text/javascript"></script>
 

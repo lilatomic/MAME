@@ -5,35 +5,134 @@
     <title>MAME</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/mainKev.css">
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <!--<script type="text/javascript" src="js/instafeed.min.js"></script>-->
 </head>
 
 <body>
-    <header id="header">
-        <ul>
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="get-involved.html">Students</a></li><br>
+        <li><a href="get-involved-sponsors.html">Sponsors</a></li>
+    </ul>
+    <ul id="dropdown2" class="dropdown-content">
+        <li><a href="get-involved.html">Students</a></li>
+        <li><a href="get-involved-sponsors.html">Sponsors</a></li>
+    </ul>
+    <nav class="nav-center">
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo"><img src="img/mameLogoTransparent.png"></a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="hide-on-med-and-down">
             <li><a class="active" href="home.html">Home</a></li>
             <li><a href="about-us.html">About Us</a></li>
             <li><a href="design-teams-2.html">Design Teams</a></li>
             <li><a href="events.html">Events</a></li>
-            <li><a href="get-involved.html">Get Involved</a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Get Involved</a></li>
+            <li><a href="Resources.html">Resources</a></li>
             <li><a href="mentoring.html">Mentorship</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="contact-us.html">Contact</a></li>
         </ul>
-    </header>
-    <section id="homePage">
-        <img class="homeBackground" src="img/MAME11.jpg">
-        <!-- Insert Autoplay Video Here? 
-        <video autoplay loop muted width="100%">
-            <source src="/vids/MAME.mp4" type="video/mp4">
-        </video>
-        -->
-        <img class="homeLogo" src="img/logo1.png">
+        <ul class="side-nav" id="mobile-demo">
+            <li><a class="active" href="home.html">Home</a></li><br>
+            <li><a href="about-us.html">About Us</a></li><br>
+            <li><a href="design-teams-2.html">Design Teams</a></li><br>
+            <li><a href="events.html">Events</a></li><br>
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Get Involved</a></li><br>
+            <li><a href="Resources.html">Resources</a></li><br>
+            <li><a href="mentoring.html">Mentorship</a></li><br>
+            <li><a href="faq.html">FAQ</a></li><br>
+            <li><a href="contact-us.html">Contact</a></li>
+        </ul>
+    </div>
+    </nav>
+    <!--
+        <div class="carousel carousel-slider" data-indicators="true">
+            <a class="carousel-item" href="#link1"><img src="img/HomePage2.PNG"></a>
+            <a class="carousel-item" href="#link2"><img src="img/Potential Background 2.jpg"></a>
+            <a class="carousel-item" href="#link3"><img src="img/StickerMuleSlideshow.png"></a>
+        </div>
+    -->
+
+    <div class="carousel carousel-slider center fullscreen" data-indicators="true">
+        <!--<div class="carousel-fixed-item center">
+            <ul class="social-network2 social-circle2">
+                <li><a href="https://www.facebook.com/mamemcgill " class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/mcgill-association-of-mechanical-engineering" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/mame_mcgill/ " class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.snapchat.com/add/mame_mcgill/ " class="icoSnapchat" title="Snapchat"><i class="fa fa-snapchat-ghost"></i></a></li>
+            </ul>
+        </div> -->
+        <div class="carousel-item red white-text" href="#one!">
+            <img src="img/HomePage2.PNG">
+        </div>
+        <a href="http://vention.io">
+        <div class="carousel-item amber white-text" href="#two!">
+          <img src="img/CADMad2.png" href="http://www.vention.io">
+        </div>
+        </a>
+    </div>
+
+    <!-- Video and Newsletter Section -->
+    <section class="row noPadding">
+        <div class="col-sm-8">
+            <!-- Youtube Video Here -->
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/-yKGD3uad5U" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="col-sm-4 newsletter">
+            <!-- Newsletter Here -->
+            <h4 class="center-align">This week's newsletter:</h4>
+            <a href="https://drive.google.com/drive/folders/0B1tKY0emTc48bHpzd2VMdlU5aUU"><img class="responsive-img center-align" src="img/Newsletter2.png"></a>
+        </div>
     </section>
-    <section id="news">
-        <!-- The news feed from our facebook page would go here. -->
+
+    <!-- MAMEPress Section -->
+    <section class="col-sm-12">
+
+        <!-- MAMEPress Title Div || NOTE: probably want to change these classes slightly, so make new ones with similar framework?-->
+        <div class="row noPadding mamePressBanner">
+            <h2>MAMEPress</h2>
+        </div>
+
+        <!-- Have the Instagram Loop Here (can be interchangeable with other plugins for future proof)
+        <script src="//www.powr.io/powr.js" external-type="html"></script> 
+        <div class="powr-instagram-feed" id="b7800114_1503779158"></div>-->
     </section>
+
+    <!-- The footer spacing on top if being hindered by the bootstrap class-->
+    <footer class="footerAll">
+        <div class="row">
+            <p class="footerLinks">
+                <a href="contact-us.html">Contact</a> <span>/</span> <a href="about-us.html">The Team</a> <span>/</span> <a href="events.html">Events</a>
+            </p>
+        </div>
+        <div class="row">
+            <ul class="social-network social-circle">
+                <li><a href="https://www.facebook.com/mamemcgill/" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="http://www.linkedin.com/company/mcgill-association-of-mechanical-engineering" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/mame_mcgill/" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.snapchat.com/add/mame_mcgill" class="icoSnapchat" title="Snapchat"><i class="fa fa-snapchat-ghost"></i></a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <p>
+            Sponsored by 
+            <a href="https://www.stickermule.com/ca"><img src="img/stickermule-logo.png" style="height: 41px; width: 150px;"></a>
+            <br>
+            © McGill Association of Mechanical Engineers (MAME) 2016
+            </p>
+        </div>
+    </footer>
 </body>
 <script type="text/javascript"></script>
 

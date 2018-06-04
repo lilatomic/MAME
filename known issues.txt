@@ -1,0 +1,33 @@
+KNOWN ISSUES TO FIX
+
+/*-----------GENERAL-------------*/
+-Make banners smaller
+-Anchor navbar to top without breaking mobile version
+
+/*-----------ABOUT US--------------*/
+-Keep aspect ratio to square on about us
+-Find way to make 13 squares less awkward
+-Footer links centred at bottom
+
+/*-----------DESIGN TEAMS--------------*/
+-Make text less awkward (last sentence)
+
+/*-----------EVENTS--------------*/
+-Make Calendar prettier
+-Social is offset by ~10px
+-Background of text are red?
+
+/*-----------GET INVOLVED--------------*/
+-Aspect ratios
+
+/*-----------RESOURCES--------------*/
+-Size of images for coursepacks
+
+/*-----------MENTORSHIP--------------*/
+
+/*-----------FAQ--------------*/
+-Text is way too big lol
+-Materialize it? ie similar to events descriptions
+
+/*-----------CONTACT US--------------*/
+-lol

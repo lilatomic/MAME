@@ -5,23 +5,54 @@
     <title>MAME</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/mainKev.css">
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
 </head>
 
 <body>
-    <header id="header">
-        <ul>
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="get-involved.html">Students</a></li><br>
+        <li><a href="get-involved-sponsors.html">Sponsors</a></li>
+    </ul>
+    <ul id="dropdown2" class="dropdown-content">
+        <li><a href="get-involved.html">Students</a></li>
+        <li><a href="get-involved-sponsors.html">Sponsors</a></li>
+    </ul>
+    <nav class="nav-center">
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo"><img src="img/mameLogoTransparent.png"></a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="hide-on-med-and-down">
             <li><a href="home.html">Home</a></li>
             <li><a href="about-us.html">About Us</a></li>
             <li><a href="design-teams-2.html">Design Teams</a></li>
             <li><a href="events.html">Events</a></li>
-            <li><a href="get-involved.html">Get Involved</a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Get Involved</a></li>
+            <li><a href="Resources.html">Resources</a></li>
             <li><a href="mentoring.html">Mentorship</a></li>
             <li><a class="active" href="faq.html">FAQ</a></li>
             <li><a href="contact-us.html">Contact</a></li>
         </ul>
-    </header>
+        <ul class="side-nav" id="mobile-demo">
+            <li><a href="home.html">Home</a></li><br>
+            <li><a href="about-us.html">About Us</a></li><br>
+            <li><a href="design-teams-2.html">Design Teams</a></li><br>
+            <li><a href="events.html">Events</a></li><br>
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Get Involved</a></li><br>
+            <li><a href="Resources.html">Resources</a></li><br>
+            <li><a href="mentoring.html">Mentorship</a></li><br>
+            <li><a class="active" href="faq.html">FAQ</a></li><br>
+            <li><a href="contact-us.html">Contact</a></li>
+        </ul>
+    </div>
+    </nav>
     <section class="bannerAll bannerText">
         <h1>FAQ</h1>
     </section>
@@ -92,6 +123,29 @@
             <p>So do we. Drop by the office (MC120) and let the MAMECube rock your world.</p>
         </div>
     </section>
+    <footer class="footerAll">
+        <div class="row">
+            <p class="footerLinks">
+                <a href="contact-us.html">Contact</a> <span>/</span> <a href="about-us.html">The Team</a> <span>/</span> <a href="events.html">Events</a>
+            </p>
+        </div>
+        <div class="row">
+            <ul class="social-network social-circle">
+                <li><a href="https://www.facebook.com/mamemcgill/" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="http://www.linkedin.com/company/mcgill-association-of-mechanical-engineering" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/mame_mcgill/" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.snapchat.com/add/mame_mcgill" class="icoSnapchat" title="Snapchat"><i class="fa fa-snapchat-ghost"></i></a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <p>
+            Sponsored by 
+            <a href="https://www.stickermule.com/ca"><img src="img/stickermule-logo.png" style="height: 41px; width: 150px;"></a>
+            <br>
+            © McGill Association of Mechanical Engineers (MAME) 2016
+            </p>
+        </div>
+    </footer>
 </body>
 <script>
 var acc = document.getElementsByClassName("accordion");
