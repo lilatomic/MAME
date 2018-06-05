@@ -83,13 +83,13 @@ h1 {
     width: 100%;
 }
 
-.flex-container {
+#aboutUsIntro-flex-container {
     display: inline-flex;
     flex-flow: row wrap;
     justify-content: space-around;
 }
 
-.flex-container > * {
+#aboutUsIntro-flex-container > * {
     padding: 10px;
     flex: 1;
     display: inline-flex;
@@ -122,7 +122,7 @@ h1 {
 
 /*for when there is not enough room for text and the picture side-by-side*/
 @media all and (max-width: 800px) {
-    .flex-container{
+    #aboutUsIntro-flex-container{
         flex-direction:column;
         align-items: center;
     }
