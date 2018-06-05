@@ -84,9 +84,48 @@ h1 {
 }
 
 .flex-container {
-    display: flex;
+    display: inline-flex;
     flex-flow: row wrap;
     justify-content: space-around;
+}
+
+.flex-container > * {
+    padding: 10px;
+    flex: 1;
+    display: inline-flex;
+}
+
+.aboutUsIntroIMG {
+    max-height: 400px;
+    max-width: 100%;
+    margin: auto;
+    width: auto;
+    height: auto;
+    padding-top: 30px;
+}
+
+#aboutUsIntroIMG {
+    max-width: 400px;
+}
+
+#aboutUsIntro p {
+    text-align: justify;
+    text-align-last: center;
+    font-size: 18px;
+    line-height: 150%;
+    font-variant: small-caps;
+    font-weight: 600;
+    color: #565656;
+    padding: 30px;
+    flex-grow: 1;
+}
+
+/*for when there is not enough room for text and the picture side-by-side*/
+@media all and (max-width: 800px) {
+    .flex-container{
+        flex-direction:column;
+        align-items: center;
+    }
 }
 
 #banner h3 {
@@ -104,29 +143,6 @@ h1 {
     text-align: center;
     letter-spacing: 15px;
 }
-
-#aboutUsIntro p {
-    text-align: justify;
-    text-align-last: center;
-    font-size: 18px;
-    line-height: 150%;
-    font-variant: small-caps;
-    font-weight: 600;
-    color: #565656;
-    padding: 30px;
-}
-
-.aboutUsIntroIMG {
-    display: block;
-    margin: 0 auto;
-    width: auto;
-    padding-top: 30px;
-}
-
-span.centerImage {
-    text-align: center;
-}
-
 
 /* The fucking opacity in here man... I want it 100%~ jesus. Nothing works, idk. */
 
