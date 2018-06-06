@@ -150,30 +150,7 @@ h1 {
     letter-spacing: 15px;
 }
 
-/* The fucking opacity in here man... I want it 100%~ jesus. Nothing works, idk. */
-
-.transbox section {
-    color: black;
-    width: 70%;
-    padding: 15px;
-    margin-left: 5%;
-    padding-top: 30px;
-    display: inline-block;
-}
-
-.transbox h3 {
-    width: 100%;
-    margin: 0 auto;
-}
-
-.transbox img {
-    width: 15%;
-    margin-left: 5%;
-    margin-bottom: 25%;
-    display: inline-block;
-}
-
-/*********************** NEW STUFF HERE ****************************/
+/**/
 
 .rowPadding {
     padding-left: 15px;
