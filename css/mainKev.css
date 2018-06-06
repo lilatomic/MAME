@@ -1,4 +1,10 @@
-/*--- nav --*/
+/*---colour---*/
+:root {
+    --MAME-red: rgb(239, 61, 53);
+    --MAME-grey: rgb(86, 86, 86);
+}
+
+/*--- nav ---*/
 
 nav .brand-logo img{
     height: 50px;
@@ -75,11 +81,8 @@ h1 {
 /*----------------------------------- AboutUs --------------------------------*/
 
 #banner {
-    background: url(../img/MAME10.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    -moz-background: cover;
-    -o-background: cover;
     width: 100%;
 }
 
@@ -115,7 +118,7 @@ h1 {
     line-height: 150%;
     font-variant: small-caps;
     font-weight: 600;
-    color: #565656;
+    color: var(--MAME-grey);
     padding: 30px;
     flex-grow: 1;
 }
@@ -135,7 +138,7 @@ h1 {
     line-height: 150%;
     font-variant: small-caps;
     font-weight: 600;
-    color: #565656;
+    color: var(--MAME-grey);
 }
 
 #banner h1 {
@@ -184,7 +187,7 @@ h1 {
 
 .designGrid div {
     position: absolute;
-    background-color: #565656;
+    background-color: var(--MAME-grey);
     color: white;
     opacity: 0;
     transition: all 0.4s ease-in-out;
@@ -255,7 +258,7 @@ h1 {
 
 #team section div {
     position: absolute;
-    background-color: #565656;
+    background-color: var(--MAME-grey);
     color: white;
     opacity: 0;
     transition: all 0.4s ease-in-out;
@@ -284,27 +287,12 @@ h1 {
     opacity: 0.025;
 }
 
-/*#team h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;    
-    text-align: left;
-    padding-left: 15px;
-    font-weight: bold;
-}*/
-
 #team h4 {
     font-family: 'Nunito', sans-serif;
     font-size: 18px;
     text-align: left;
     padding-left: 15px;
 }
-
-/*#team p {
-    font-size: 12px;
-    text-align: justify;
-    text-align-last: center;
-    padding: 10px 20px 20px 20px;
-}*/
 
 #team b {
     font-size: 13px;
@@ -357,7 +345,7 @@ h1 {
 }
 
 .designTeamsLinks a {
-    color: #ef3d35;
+    color: var(--MAME-red);
     transition: all 0.5s ease;
 }
 
@@ -567,7 +555,7 @@ ul.social-network li {
 }
 
 .social-circle li a {
-    background-color: #565656;
+    background-color: var(--MAME-grey);
 }
 
 /*---------------------------------Events----------------------------------------*/
@@ -586,7 +574,7 @@ ul.social-network li {
     padding-bottom: 5px;
     border-bottom-style: solid;
     border-width: 3px;
-    border-bottom-color: #565656;
+    border-bottom-color: var(--MAME-grey);
 }
 
 #events ul {
@@ -608,7 +596,7 @@ ul.social-network li {
     padding-bottom: 5px;
     border-bottom-style: solid;
     border-width: 3px;
-    border-bottom-color: #565656;
+    border-bottom-color: var(--MAME-grey);
 }
 
 .eventDescriptions {
@@ -630,7 +618,7 @@ ul.social-network li {
     margin: 0 auto;
     padding-top: 2%;
     padding-bottom: 2%;
-    color: #565656;
+    color: var(--MAME-grey);
     line-height: 125%;
     font-weight: 500;
 }
@@ -644,7 +632,7 @@ ul.social-network li {
 
 button.accordion {
     background-color: transparent;
-    color: #565656;
+    color: var(--MAME-grey);
     cursor: pointer;
     padding: 0px;
     width: 100%;
@@ -657,7 +645,7 @@ button.accordion {
 
 button.accordion.active,
 button.accordion:hover {
-    color: red;
+    color: var(--MAME-red);
     background-color: transparent;
     text-decoration: none;
     transition: all 0.5s ease-in-out;
@@ -691,7 +679,7 @@ button.accordion:hover {
     display: inline-block;
     width: 39%;
     height: 325px;
-    background-color: #565656;
+    background-color: var(--MAME-grey);
     vertical-align: top;
     padding: 25px;
 }
@@ -714,7 +702,7 @@ button.accordion:hover {
     text-align: center;
     font-weight: 900;
     letter-spacing: 5px;
-    color: #565656;
+    color: var(--MAME-grey);
     padding-top: 25px;
     padding-bottom: 25px;
 }
@@ -744,7 +732,7 @@ button.accordion:hover {
     padding-top: 20px;
     padding-bottom: 15px;
     text-align: center;
-    color: #565656;
+    color: var(--MAME-grey);
 }
 
 a {
@@ -754,7 +742,7 @@ a {
 }
 
 a:hover {
-    color: #ef3d35;
+    color: var(--MAME-red);
     text-decoration: none;
     transition: all 0.5s ease-in-out;
 }
@@ -787,7 +775,7 @@ a:hover {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #565656;
+    background-color: var(--MAME-grey);
     position: fixed;
     top: 0;
     width: 100%;
@@ -818,7 +806,7 @@ a:hover {
 }
 
 #header li a:hover {
-    background-color: #ef3d35;
+    background-color: var(--MAME-red);
     /*Seems neat? lol*/
     padding-right: 14px;
     padding-left: 14px;
@@ -826,34 +814,8 @@ a:hover {
 }
 
 .active {
-    background-color: #ef3d35;
+    background-color: var(--MAME-red);
 }
-
-
-/*
-B
-U
-F
-F
-E
-R
-
-S
-O
-
-T
-H
-A
-T
-
-I
-
-S
-E
-E
-
-...*/
-
 /*------------------------------- Resources -------------------------------------*/
 
 #academic h3 {
@@ -948,7 +910,7 @@ E
 }
 
 #resourcesLinks a {
-    color: #ef3d35;
+    color: var(--MAME-red);
     transition: all 0.5s ease;
 }
 
@@ -965,7 +927,6 @@ E
     height: 335px;
     display: block;
     margin: 0 auto;
-}
 }
 
 .resourcesIMG {
@@ -1077,7 +1038,7 @@ ul.social-network2 li {
 }
 
 .social-circle2 li a {
-    background-color: #565656;
+    background-color: var(--MAME-grey);
 }
 
 /*-------------------------------Home Page-------------------------------------*/
@@ -1105,7 +1066,7 @@ ul.social-network2 li {
 }
 
 #sponsorsLinks a {
-    color: #ef3d35;
+    color: var(--MAME-red);
     transition: all 0.5s ease;
 }
 
@@ -1118,4 +1079,3 @@ ul.social-network2 li {
 #sponsorIMG {
     /*center errthang*/
 }
-
