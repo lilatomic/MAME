@@ -6,6 +6,10 @@
 
 /*--- nav ---*/
 
+nav .nav-wrapper {
+    background-color: var(--MAME-grey);
+}
+
 nav .brand-logo img{
     height: 50px;
     /*margin-left: 10px;*/
