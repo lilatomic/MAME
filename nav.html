@@ -6,13 +6,13 @@
     <nav class="nav-center">
         <div class="nav-wrapper">
             <a href="home.html" class="brand-logo"><img src="img/mameLogoTransparent.png"></a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul class="nav-left hide-on-med-and-down">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="about-us.html">About Us</a></li>
                 <li><a href="design-teams.html">Design Teams</a></li>
                 <li><a href="events.html">Events</a></li>
-                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Get Involved<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Get Involved<i class="material-icons right">arrow_drop_down</i></a></li>
                 <li><a href="Resources.html">Resources</a></li>
                 <li><a href="faq.html">FAQ</a></li>
                 <li><a href="contact-us.html">Contact</a></li>
@@ -21,12 +21,24 @@
     </nav>
 </div>
 
-<ul class="sidenav" id="mobile-demo">
+<ul id="slide-out" class="side-nav">
     <li><a href="home.html">Home</a></li>
     <li><a href="about-us.html">About Us</a></li>
     <li><a href="design-teams.html">Design Teams</a></li>
     <li><a href="events.html">Events</a></li>
-    <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Get Involved</a></li>
+    <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+            <li>
+                <a class="collapsible-header">Get Involved<i class="material-icons">arrow_drop_down</i></a>
+                <div class="collapsible-body">
+                    <ul>
+                        <li><a href="get-involved.html">    Students</a></li>
+                        <li><a href="get-involved-sponsors.html">    Sponsors</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </li>
     <li><a href="Resources.html">Resources</a></li>
     <li><a href="faq.html">FAQ</a></li>
     <li><a href="contact-us.html">Contact</a></li>
@@ -34,10 +46,20 @@
 
 <script>
     $( document ).ready(function(){
-        $('.dropdown-trigger').dropdown({
+        $('.dropdown-button').dropdown({
             hover: true,
-            coverTrigger: false,
+            belowOrigin: true,
         });
-        $('.sidenav').sidenav();
     });
 </script>
+<script>
+    $(document).ready(function(){
+        $(".button-collapse").sideNav();
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $('.collapsible').collapsible();
+    });
+</script>
+
