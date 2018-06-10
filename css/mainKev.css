@@ -150,13 +150,12 @@ h1 {
     justify-content: space-around;
 }
 #team .profile {
-    width: auto;
-    height: auto;
+    margin: auto;
 }
 #team .profile img {
     display: block;
-    max-width: 600px;
-    /*min-width: 300px;*/
+    min-width: 100px;
+    max-width: 100%;
     width: auto;
     height: auto;
 }
