@@ -9,6 +9,12 @@
 nav .nav-wrapper {
     background-color: var(--MAME-grey);
 }
+.side-nav {
+    background-color: var(--MAME-grey);
+}
+.side-nav .collapsible-body {
+    background-color: var(--MAME-grey);
+}
 
 nav .brand-logo img{
     height: 50px;
@@ -31,6 +37,9 @@ nav .brand-logo img{
     margin-left: 200px;
 }
 
+.side-nav > li a {
+    color: white;
+}
 
 /*----------------------------------- Reset ---------------------------------*/
 /*If you're reading this, please don't cringe at this awful code - there's a reason why im in mech not in comp eng*/
