@@ -36,6 +36,11 @@
         $(document).ready(function(){
             $('.carousel').carousel();
         });
+        autoplay()
+        function autoplay() {
+            $('.carousel').carousel('next');
+            setTimeout(autoplay, 8000);
+        }
     </script>
 
     <!-- The footer spacing on top if being hindered by the bootstrap class-->
