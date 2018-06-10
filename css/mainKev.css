@@ -40,6 +40,9 @@ nav .brand-logo img{
 .side-nav > li a {
     color: white;
 }
+.side-nav .collapsible-body a {
+    margin-left: 40px;
+}
 
 /*----------------------------------- Reset ---------------------------------*/
 /*If you're reading this, please don't cringe at this awful code - there's a reason why im in mech not in comp eng*/
