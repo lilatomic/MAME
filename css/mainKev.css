@@ -144,6 +144,10 @@ h1 {
     flex-grow: 1;
 }
 
+#team {
+    display:flex;
+}
+
 /*for when there is not enough room for text and the picture side-by-side*/
 @media all and (max-width: 800px) {
     #aboutUsIntro-flex-container{
