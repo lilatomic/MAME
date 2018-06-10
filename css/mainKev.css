@@ -151,13 +151,25 @@ h1 {
 }
 #team .profile {
     margin: auto;
+    max-width: 33.33%;
 }
 #team .profile img {
     display: block;
-    min-width: 100px;
     max-width: 100%;
     width: auto;
     height: auto;
+}
+@media all and (max-width: 1500px) {
+    #team .profile {
+        margin: auto;
+        max-width: 50%;
+    }
+}
+@media all and (max-width: 800px) {
+    #team .profile {
+        margin: auto;
+        max-width: 100%;
+    }
 }
 
 #team section {
