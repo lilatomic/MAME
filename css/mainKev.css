@@ -15,14 +15,14 @@ nav .brand-logo img{
     /*margin-left: 10px;*/
 }
 
-nav.nav-center ul {
+.nav-center ul {
     text-align: center;
 }
-nav.nav-center ul li {
+.nav-center ul li {
     display: inline;
     float: none;
 }
-nav.nav-center ul li a {
+.nav-center ul li a {
     display: inline-block;
 }
 .nav-left {
