@@ -40,6 +40,12 @@ nav .brand-logo img{
 .side-nav > li a {
     color: white;
 }
+.side-nav .collapsible-header{
+    padding-left: 32px;
+}
+.side-nav li>a>i, .side-nav li>a>[class^="mdi-"], .side-nav li>a li>a>[class*="mdi-"], .side-nav li>a>i.material-icons {
+    float: right;
+}
 .side-nav .collapsible-body a {
     margin-left: 40px;
 }
