@@ -159,7 +159,7 @@ h1 {
     width: auto;
     height: auto;
 }
-@media all and (max-width: 1500px) {
+@media all and (max-width: 1400px) {
     #team .profile {
         margin: auto;
         max-width: 50%;
