@@ -145,7 +145,70 @@ h1 {
 }
 
 #team {
-    display:flex;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+#team .profile {
+    width: auto;
+    height: auto;
+}
+#team .profile img {
+    display: block;
+    max-width: 600px;
+    /*min-width: 300px;*/
+    width: auto;
+    height: auto;
+}
+
+#team section {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+
+#team section div {
+    position: absolute;
+    background-color: var(--MAME-grey);
+    color: white;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    height: 500px;
+    z-index: 99;
+}
+
+#team section img {
+    display: block;
+    margin: 0 auto;
+    height: 500px;
+    width: 100%;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    z-index: -1000;
+}
+
+#team section:hover div, #team section:active div {
+    opacity: 1;
+    height: 500px;
+    width: 100%;
+}
+
+#team section:hover img, #team section:active img {
+    opacity: 0.025;
+}
+
+#team h4 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 15px;
+}
+
+#team b {
+    font-size: 13px;
+    text-decoration: underline;
 }
 
 /*for when there is not enough room for text and the picture side-by-side*/
@@ -243,64 +306,6 @@ h1 {
     font-size: 13px;
     text-decoration: underline;
 }
-
-
-
-/*-------------------------------- Councillors ------------------------------*/
-
-#team {
-    font-size: 0px;
-}
-
-#team section {
-    display: inline-block;
-    overflow: hidden;
-    position: relative;
-}
-
-#team section div {
-    position: absolute;
-    background-color: var(--MAME-grey);
-    color: white;
-    opacity: 0;
-    transition: all 0.4s ease-in-out;
-    -webkit-transition: all 0.4s ease-in-out;
-    height: 500px;
-    z-index: 99;
-}
-
-#team section img {
-    display: block;
-    margin: 0 auto;
-    height: 500px;
-    width: 100%;
-    transition: all 0.4s ease-in-out;
-    -webkit-transition: all 0.4s ease-in-out;
-    z-index: -1000;
-}
-
-#team section:hover div, #team section:active div {
-    opacity: 1;
-    height: 500px;
-    width: 100%;
-}
-
-#team section:hover img, #team section:active img {
-    opacity: 0.025;
-}
-
-#team h4 {
-    font-family: 'Nunito', sans-serif;
-    font-size: 18px;
-    text-align: left;
-    padding-left: 15px;
-}
-
-#team b {
-    font-size: 13px;
-    text-decoration: underline;
-}
-
 
 /*----------------------------Design Teams-----------------------------------*/
 
