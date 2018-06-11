@@ -94,7 +94,7 @@ h1 {
 
 .bannerAll {
     width: 100%;
-    height: 100px;
+    min-height: 100px;
     background: linear-gradient(to right, rgba(86, 86, 86, 0.8) 0%, rgba(239, 61, 53, 0.8) 50%, rgba(86, 86, 86, 0.8) 100%), url(../img/MAME13.jpg);
     background-size: cover;
     margin-top: 0px;
@@ -105,6 +105,7 @@ h1 {
     text-align: center;
     letter-spacing: 10px;
     padding-top: 15px;
+    padding-bottom: 15px;
     margin-top: 0px;
 }
 
