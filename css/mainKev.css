@@ -15,6 +15,18 @@
     flex: 1;
     display: inline-flex;
 }
+
+.pre-flexbox-blurb p {
+    text-align: justify;
+    text-align-last: center;
+    font-size: 18px;
+    line-height: 150%;
+    font-variant: small-caps;
+    font-weight: 600;
+    color: var(--MAME-grey);
+    padding: 30px;
+    flex-grow: 1;
+}
 /*--- nav ---*/
 
 nav .nav-wrapper {
@@ -152,18 +164,6 @@ h1 {
 
 #aboutUsIntroIMG {
     max-width: 400px;
-}
-
-#aboutUsIntro p {
-    text-align: justify;
-    text-align-last: center;
-    font-size: 18px;
-    line-height: 150%;
-    font-variant: small-caps;
-    font-weight: 600;
-    color: var(--MAME-grey);
-    padding: 30px;
-    flex-grow: 1;
 }
 
 #team {
