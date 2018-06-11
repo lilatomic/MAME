@@ -3,7 +3,18 @@
     --MAME-red: rgb(239, 61, 53);
     --MAME-grey: rgb(86, 86, 86);
 }
+/*---flexbox---*/
+.flex-container {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
 
+.flex-contained {
+    padding: 10px;
+    flex: 1;
+    display: inline-flex;
+}
 /*--- nav ---*/
 
 nav .nav-wrapper {
@@ -1073,20 +1084,22 @@ ul.social-network2 li {
 /*-------------------------------Home Page-------------------------------------*/
 
 /*-------------------------------Get Involved Sponsors-------------------------------------*/
-#sponsors div{
+.sponsors div{
+    flex: 1 0 300px;
     height: auto;
     display: inline-block;
     padding-top: 20px;
     vertical-align: top;
     text-align: center;
+    max-width: 500px;
 }
 
-#sponsors h4 {
+.sponsors h4 {
     text-align: center;
     font-weight: bold;
 }
 
-#sponsors p {
+.sponsors p {
     text-align: justify;
     text-align-last: center;
     padding: 5px 20px 5px 20px;
@@ -1094,17 +1107,17 @@ ul.social-network2 li {
     max-width: 900px;
 }
 
-#sponsorsLinks a {
+.sponsorsLinks a {
     color: var(--MAME-red);
     transition: all 0.5s ease;
 }
 
-#sponsorsLinks a:hover {
+.sponsorsLinks a:hover {
     color: blue;
     text-decoration: none;
     transition: all 0.5s ease-in-out;
 }
 
-#sponsorIMG {
+.sponsorIMG {
     /*center errthang*/
 }
