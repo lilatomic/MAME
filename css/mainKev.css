@@ -23,14 +23,24 @@ nav .brand-logo img{
 
 .nav-center ul {
     text-align: center;
+    background-color: var(--MAME-grey);
 }
 .nav-center ul li {
     display: inline;
     float: none;
+    background-color: var(--MAME-grey);
 }
 .nav-center ul li a {
     display: inline-block;
+    color: white;
+    background-color: var(--MAME-grey);
 }
+
+/*makes the text of a dropdown not have a weird highlight*/
+.nav-center .dropdown-content li:hover{
+    background-color: var(--MAME-grey);
+}
+
 .nav-left {
     float: none;
     text-align: center;
