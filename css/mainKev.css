@@ -887,6 +887,18 @@ a:hover {
     padding-bottom: 10px;
 }
 
+#finances .row {
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+#finances .col-sm-6 {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
 .eusmall h3 {
     text-align: center;
     font-weight: bold;
