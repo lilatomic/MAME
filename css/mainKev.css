@@ -911,6 +911,14 @@ a:hover {
     padding-bottom: 10px;
 }
 
+.mental-health-and-equity h3 {
+    text-align: center;
+    font-weight: bold;
+    background: var(--MAME-red);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .resources section {
     height: auto;
     display: inline-block;
