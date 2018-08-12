@@ -911,24 +911,24 @@ a:hover {
     padding-bottom: 10px;
 }
 
-#resources section {
+.resources section {
     height: auto;
     display: inline-block;
 }
 
-#resources div {
+.resources div {
     height: auto;
     display: inline-block;
     padding-top: 20px;
     vertical-align: top;
 }
 
-#resources h4 {
+.resources h4 {
     text-align: center;
     font-weight: bold;
 }
 
-#resources p {
+.resources p {
     text-align: justify;
     text-align-last: center;
     padding: 5px 20px 5px 20px;
@@ -955,12 +955,12 @@ a:hover {
     padding: 5px 20px 5px 20px;
 }
 
-#resourcesLinks a {
+.resourcesLinks a {
     color: var(--MAME-red);
     transition: all 0.5s ease;
 }
 
-#resourcesLinks a:hover {
+.resourcesLinks a:hover {
     color: blue;
     text-decoration: none;
     transition: all 0.5s ease-in-out;
