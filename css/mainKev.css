@@ -996,12 +996,12 @@ a:hover {
 }
 
 .resourcesIMG {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
     width: 100px;
-    height: 100px;
+    height: auto;
     display: block;
     margin: 0 auto;
+    border: 3px solid var(--MAME-grey);
 }
 
 .mallIMG {
