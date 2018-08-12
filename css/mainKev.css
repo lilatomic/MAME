@@ -282,7 +282,11 @@ h1 {
     width: 100%;
     min-width: 400px;
     max-width: 33.33%;
-    height: 500px;
+    height: 400px;
+}
+
+.designGrid section {
+    width: 100%;
 }
 
 .designGrid div {
@@ -299,6 +303,8 @@ h1 {
 .designGrid img {
     display: block;
     width: 100%;
+    object-fit: contain;
+    max-height: 100%;
     transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
 }
