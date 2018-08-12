@@ -36,7 +36,7 @@
 
 <section>
     <section>
-        <div class="col-sm-12" id="academic">
+        <div class="col-sm-12 academic">
             <h3>Academic</h3>
         </div>
 
@@ -78,15 +78,16 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-12" id="academic">
+        <div class="col-sm-12 academic">
             <h3>&nbsp;</h3>
         </div>
     </section>
 
 
-    <section><div class="parallax-container">
-        <div class="parallax"><img src="img/resBG1.jpg"></div>
-    </div>
+    <section>
+        <div class="parallax-container">
+            <div class="parallax"><img src="img/resBG1.jpg"></div>
+        </div>
 
         <div class="col-sm-12" id="externalrelations">
             <h3>External Relations</h3>
@@ -117,7 +118,7 @@
     </section>
 
     <section>
-        <div class="col-sm-12" id="finances">
+        <div class="col-sm-12 finances">
             <h3>MAME Finances</h3>
         </div>
         <div id="resourcesFinance">
@@ -152,7 +153,7 @@
                 <img class="img-responsive financeIMG" src="img/Funding.png">
             </div>
         </div>
-        <div class="col-sm-12" id="finances">
+        <div class="col-sm-12 finances">
             <h3>&nbsp;</h3>
         </div>
     </section>
@@ -199,7 +200,7 @@
                 </p>
             </div>
         </div>
-        <div class="col-sm-12" id="eusmall">
+        <div class="col-sm-12 eusmall">
             <h3>&nbsp;</h3>
         </div>
     </section>
@@ -208,7 +209,7 @@
         <div class="parallax-container">
             <div class="parallax"><img src="img/resBG3.jpg"></div>
         </div>
-        <div class="col-sm-12" id="externalrelations">
+        <div class="col-sm-12 externalrelations">
             <h3>&nbsp;</h3>
         </div>
 
@@ -218,7 +219,7 @@
     </section>
 
     <section>
-        <div class="col-sm-12" id="resLinks">
+        <div class="col-sm-12 resLinks">
             <h3>Useful Links</h3>
         </div>
         <div class="col-sm-12">
@@ -250,7 +251,7 @@
                 </a>
             </div>
         </div>
-        <div class="col-sm-12" id="resLinks">
+        <div class="col-sm-12 resLinks">
             <h3>&nbsp;</h3>
         </div>
     </section>
@@ -264,7 +265,13 @@
         });
     </script>
 </div>
+
+<script>
+    $(document).ready(function(){
+        $('.parallax').parallax();
+    });
+</script>
+
 </body>
-<script type="text/javascript"></script>
 
 </html>

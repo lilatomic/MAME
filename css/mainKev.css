@@ -864,7 +864,7 @@ a:hover {
 }
 /*------------------------------- Resources -------------------------------------*/
 
-#academic h3 {
+.academic h3 {
     text-align: center;
     font-weight: bold;
     background: #2263cc;
@@ -879,7 +879,7 @@ a:hover {
     display: block;
 }
 
-#finances h3 {
+.finances h3 {
     text-align: center;
     font-weight: bold;
     background: #2aa838;
@@ -887,7 +887,7 @@ a:hover {
     padding-bottom: 10px;
 }
 
-#eusmall h3 {
+.eusmall h3 {
     text-align: center;
     font-weight: bold;
     background: #8e3ed8;
@@ -895,7 +895,7 @@ a:hover {
     padding-bottom: 10px;
 }
 
-#externalrelations h3 {
+.externalrelations h3 {
     text-align: center;
     font-weight: bold;
     background: #fca10f;
@@ -903,7 +903,7 @@ a:hover {
     padding-bottom: 10px;
 }
 
-#resLinks h3 {
+.resLinks h3 {
     text-align: center;
     font-weight: bold;
     background: #727272;
