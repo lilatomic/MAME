@@ -444,6 +444,12 @@ h1 {
     padding-top: 30px;
 }
 
+.washout {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    background-color: #000;
+}
+
 .left img {
     padding-top: 30px;
     display: block;
