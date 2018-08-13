@@ -396,8 +396,8 @@ h1 {
 
 /*------------------------------Contact Us-------------------------------------*/
 
-#contactUs {
-    padding-top: 150px;
+.contactUs {
+    padding-top: 20px;
     width: 49.5%;
     height: 100vh;
     background-color: white;
@@ -413,34 +413,34 @@ h1 {
     background-color: black;
 }
 
-#contactUs h1 {
+.contactUs h1 {
     font-size: 42px;
     text-align: center;
 }
 
-#contactUs h2 {
+.contactUs h2 {
     font-size: 18px;
     text-align: center;
 }
 
-#contactUs p {
+.contactUs p {
     text-align: justify;
     text-align-last: center;
 }
 
-#contactTitle {
+.contactTitle {
     text-align: center;
     width: 80%;
     margin: 0 auto;
 }
 
-#contactUs div {
+.contactUs div {
     padding-top: 0px;
     width: 80%;
     margin: 0 auto;
 }
 
-#contact-area form {
+.contact-area form {
     padding-top: 30px;
 }
 
