@@ -52,7 +52,53 @@
             <img class="aboutUsIntroIMG" src="img/CrestLogo.jpg"  />
         </div>
     </div>
+    
 </section>
+
+<section>
+    
+    
+<section class="profile">
+    <div>
+        <h3>Nicole Lee</h3>
+        <h4>President</h4>
+        <p><a class="red btn-floating" href="mailto:{{position_email}}"><i class="material-icons small">email</i></a>
+            <br>
+            <br>
+            <b>Description of Position</b>:  As President I oversee all of MAME's activities and support its councillors. I also act as MAME's representative to external groups including the EUS, Department, Faculty and other groups outside McGill.
+            <br>
+            <br>
+
+            <a class="waves-effect waves-light btn-floating modal-trigger red" href="#{{modalID}}"><i class="material-icons">add</i></a>
+        </p>
+    </div>
+    <img class="img" src="img/{{picture}}" />
+</section>
+
+<div id="{{modalID}}" class="modal modal-fixed-footer">
+    <div class="modal-content">
+        <h4>About Me</h4>
+        <p>
+            <b>Hometown</b>: Toronto, ON
+        </p>
+        <p>
+            <b>Favourite Spot in Montreal</b>: MC10
+        </p>
+        <p>
+            <b>Favourite Food</b>: Chicken Nuggets
+        </p>
+        <p>
+            <b>Mech/McGill Related Advice</b>: Don't overlook the learning you will do outside of the classroom and never underestimate the value of making connections{{advice}}
+        </p>
+        <p>
+            <br>Best MAME Memory</br>: E-Week 2018
+        </p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+    </div>
+</div>
+
 
 </section>
 
@@ -80,11 +126,6 @@
             <br>
             <br>
             <b>Description of Position</b>:  {{description_position}}
-            <br>
-            <br>
-            <b>Advice</b>: {{advice}}
-            <br>
-            <br>
 
             <a class="waves-effect waves-light btn-floating modal-trigger red" href="#{{modalID}}"><i class="material-icons">add</i></a>
         </p>
@@ -103,6 +144,9 @@
         </p>
         <p>
             <b>Favourite Food</b>:
+        </p>
+        <p>
+            <b>Mech/McGill Related Advice</b>
         </p>
         <p>
             <br>Best MAME Memory</br>:
